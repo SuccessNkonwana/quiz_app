@@ -1,14 +1,30 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Ionic Blank
+     QUIZ APP
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<div class="ion-padding">  
+  <img src="assets/quiz.jpg"><br>
+  <h2>Choose any category to start your quiz</h2>
+  <ion-button expand="block" routerLink="/category1"  [disabled]="disabled1" (click)="disable1()" > SOUTH AFRICAN POLITICS</ion-button><br>
+  <ion-button expand="block" routerLink="/category2"  [disabled]="disabled2" (click)="disable2()">  THE UNIVERSE</ion-button><br>
+  <ion-button expand="block" routerLink="/category3"  [disabled]="disabled3" (click)="disable3()"> CHRISTIAN RELIGION</ion-button><br>
+
+<!-- Round -->
+<!-- <ion-button shape="round">Round Button</ion-button> -->
+    <!-- <ion-card class="cat1" routerLink="/category1" >
+      SOUTH AFRICAN POLITICS
+    </ion-card><br>
+    <ion-card class="cat2" routerLink="/category2" >
+      THE UNIVERSE
+    </ion-card><br>
+    <ion-card class="cat3" routerLink="/category3" >
+      CHRISTIAN RELIGION
+    </ion-card> -->
+    
+</div>
 </ion-content>
