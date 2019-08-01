@@ -42,8 +42,13 @@ export class Category1Page implements OnInit {
 
 returnScoreCat1(){
   this.scoreCat1=this.getScoreCat1();
- alert("Your scoreCat1 is "+ this.scoreCat1 +"/"+ this.totCat1);
+ alert(
+  "Your score is "+ this.scoreCat1 +"/"+ this.totCat1
+  +"\n"
+  +"\n"+"Correct answers: "+this.answersCat1
+ );
  this.answersCat1;
+ 
 //  this.disabled=true;
 //  this.route1.navigate(['/results'],{queryParams:{answersCat1:this.answersCat1,scoreCat1:this.scoreCat1}})
  }

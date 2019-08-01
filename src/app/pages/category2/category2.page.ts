@@ -41,7 +41,13 @@ export class Category2Page implements OnInit {
  }
 
 returnScoreCat2(){
- alert("Your score is "+ this.getScoreCat2() +"/"+ this.totCat2);
+  document.getElementById('alert')
+ alert(
+      
+      "Your score is "+ this.getScoreCat2() +"/"+ this.totCat2
+      +"\n"
+      +"\n"+"Correct answers: "+this.answersCat2
+ );
  this.answersCat2;
  }
 

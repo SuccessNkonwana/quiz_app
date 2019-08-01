@@ -38,7 +38,10 @@ export class Category3Page implements OnInit {
  }
 
 returnScoreCat3(){
- alert("Your score is "+ this.getScoreCat3() +"/"+ this.totCat3);
+ alert("Your score is "+ this.getScoreCat3() +"/"+ this.totCat3
+ +"\n"
+ +"\n"+"Correct answers: "+this.answersCat3
+ );
  this.answersCat3;
  }
  
